@@ -4,10 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
-
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<title>Tamil Classifier</title>
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -15,7 +12,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+
+		<!-- Custom css -->
+		<link rel="stylesheet" href="css/custom.css">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,55 +40,88 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
+
+				<div class="footer same_line" >
+					<small class="child_left">12.04.16</small>
+					<small>Applying Machine Learning to Classify Tamil Handwritten Characters</small>
+				</div>
+
+				<section id="intro_slide"  data-background="white">
+					<div id="pic_header" class="same_line">
+						<div class="child_left">
+							<img width="100px" height="100px" data-src="assets/images/anna_univ.png">
+						</div>
+						<div class="child_right">
+							<img width="100px" data-src="assets/images/licet_logo.png">
+						</div>
+					</div>
+					<p>LOYOLA-ICAM COLLEGE OF ENGINEERING AND TECHNOLOGY (LICET)</p>
+					<p>Loyola  Campus, Nungambakkam, Chennai – 600034</p>
+					<br />
+					<h2>Applying Machine Learning to Classify Tamil Handwritten Characters</h2>
+					<div class="same_line">
+						<div class="child_left">
+							<div id="std">
+								<small>Done By</small>
+							</div>
+							<div id="std_name">
+								<small>Arockia Richard Raj M</small>
+							</div>
+						</div>
+						<div class="child_right">
+							<div id="gd">
+								<small>Supervisor Name</small>
+							</div>
+							<div id="gd_name">
+								<small>Ms. S Nirmala</small>
+							</div>
+						</div>
+					</div>
+					<div class="batch">
+						<small>Batch: 2012 - 2016</small>
+					</div>
 				</section>
 
+				<!-- Contents -->
 				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+					<div class="header">
+						<h2>Contents</h2>
+					</div>
+					<div class="content">
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+						</ul>
+					</div>
 				</section>
 
-				<!-- Example of nested vertical slides -->
+				<!-- Problem Statement and Objective-->
 				<section>
 					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
+						<h2>Problem Statement</h2>
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+						</ul>
 					</section>
 					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
+						<h2>Objectives</h2>
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+						</ul>
 					</section>
 				</section>
 
+				<!-- Domain -->
 				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Point of View</h2>
+					<h2>Introduction to the Domain of Work</h2>
 					<p>
 						Press <strong>ESC</strong> to enter the slide overview.
 					</p>
@@ -97,29 +130,130 @@
 					</p>
 				</section>
 
+				<!-- Literature Survey  -->
 				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
+					<h2>Literature Survey</h2>
+					<h4>On the Previous Works in Tamil Character Classifiaction</h4>
+					<table>
+						<thead>
+							<tr>
+								<th>Ref.No</th>
+								<th>Reference Paper</th>
+								<th>Authors</th>
+								<th>Findings</th>
+								<th>Cons</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Apples</td>
+								<td>$1</td>
+								<td>7</td>
+								<td>$1</td>
+								<td>7</td>
+							</tr>
+						</tbody>
+					</table>
 				</section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+				<!-- Requirements -->
+				<section>
+					<h2>System Requirements - Training</h2>
+					<section>
+						<h4>Hardware</h4>
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Software</h4>
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+						</ul>
+					</section>
+				</section>
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+				<!-- Existing vs Propoesed -->
+				<section>
+					<section>
+						<h2>Existing System</h2>
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Proposed System</h2>
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+						</ul>
+					</section>
+				</section>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+				<!-- System Architecture -->
+				<section>
+					<h2>System Architecture</h2>
+				</section>
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
+				<!-- Ftrs -->
+				<section>
+					<h2>Project Features</h2>
+					<ul>
+						<li>A<a target="blank" href="http://google.com">G</a></li>
+						<li>B</li>
+					</ul>
+				</section>
+
+				<!-- Algo -->
+				<section>
+					<h2>Algorithms</h2>
+					<section>
+						<h4>Softmax Classifier</h4>
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+						</ul>
+					</section>
+					<section>
+						<h4>2 Layer Neural Network</h4>
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+						</ul>
+					</section>
+					<section>
+						<h4>3 Layer Neural Network</h4>
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+						</ul>
+					</section>
+					<section>
+						<h4>Convolutional Neural Network</h4>
+						<ul>
+							<li>No order here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+							<li>Or here</li>
+						</ul>
+					</section>
 				</section>
 
 				<section>
@@ -143,19 +277,6 @@
 						<p class="fragment highlight-red">highlight-red</p>
 						<p class="fragment highlight-blue">highlight-blue</p>
 					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
 				</section>
 
 				<section id="themes">
@@ -391,7 +512,7 @@ Reveal.addEventListener( 'customevent', function() {
 				progress: true,
 				history: true,
 				center: true,
-
+				slideNumber: true,
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
 				// Optional reveal.js plugins

@@ -1,0 +1,42 @@
+.same_line{
+   position: relative;
+}
+.child_right{
+   float: right;
+}
+.child_left{
+   float: left;
+}
+.batch{
+   clear: left;
+}
+#pic_header .child_left{
+      margin-right: 10px;
+}
+#pic_header .child_right{
+      margin-left: 10px;
+}
+#intro_slide, #intro_slide h2{
+   color: black;
+}
+.batch small{
+   margin-top: -25px;
+}
+.slides .header{
+    width:100%;
+}
+.slides .footer{
+  position:fixed;
+  bottom:-6.5%;
+  width: 100%
+}
+.footer small{
+   font-size: 20px;
+}
+.slides table {
+    border-collapse: collapse;
+}
+
+.slides table, .slides td, .slides th {
+    border: 1px solid white;
+}
