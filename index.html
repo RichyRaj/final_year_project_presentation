@@ -85,76 +85,384 @@
 
 				<!-- Contents -->
 				<section>
-					<div class="header">
+					<section>
 						<h2>Contents</h2>
-					</div>
-					<div class="content">
 						<ul>
-							<li>No order here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-							<li>Or here</li>
+							<li>Problem Statement and Objective</li>
+							<li>Introduction to the Domain - Machine Learning and Deep Learning</li>
+							<li>Literature Survey</li>
+							<li>Requirements</li>
+							<li>Analysis - Existing VS Proposed</li>
 						</ul>
-					</div>
+					</section>
+					<section>
+						<h2>Contents</h2>
+						<ul>
+							<li>System Architecture</li>
+							<li>Project Features</li>
+							<li>Algorithms</li>
+							<li>Implementation</li>
+							<li>Demo</li>
+							<li>Benchmark Dataset</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Contents</h2>
+						<ul>
+							<li>Performance Metrics</li>
+							<li>Test Case</li>
+							<li>Findings</li>
+							<li>Future Work</li>
+							<li>References</li>
+						</ul>
+					</section>
 				</section>
 
 				<!-- Problem Statement and Objective-->
 				<section>
+					<section data-background="assets/images/collage.png" data-background-size="1000px">
+						<h2 style="margin-top:-35%">Problem Statement</h2>
+					</section>
 					<section>
 						<h2>Problem Statement</h2>
-						<ul>
-							<li>No order here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-						</ul>
+						<p>
+							Image Understanding Systems can help us a lot
+						</p>
+						<p>
+							Eg. Cheques, Number Plates, Passports
+						</p>
 					</section>
 					<section>
 						<h2>Objectives</h2>
 						<ul>
-							<li>No order here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-							<li>Or here</li>
+							<li>To develop a system that can classify tamil characters</li>
+							<li>To minimise the amount of human assistance required for the system</li>
+							<li>To understand to how much extent a linear classifier can be used on the dataset</li>
+							<li>To understand to how much extent, the architecture of a neural network affects the classification rate</li>
+							<li>To understand how a deep learning algorithm performs on the dataset</li>
+							<li>To learn machine learning and deep learning</li>
 						</ul>
 					</section>
 				</section>
 
 				<!-- Domain -->
 				<section>
-					<h2>Introduction to the Domain of Work</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
+					<section>
+						<h2>Introduction to the Domain of Work</h2>
+						<h4>Machine Learning</h4>
+						<blockquote>
+							"the field of study that gives computers the ability to learn without being explicitly programmed." - Arthur Samuel
+						</blockquote>
+						<p>
+							In Simpler Terms, Decision Making without if-else statements
+						</p>
+					</section>
+					<section>
+						<h4>Motivation</h4>
+						<p><small>This is what the computer sees</small></p>
+						<img style="border:1px soild black" width="500px" height="300px" data-src="assets/images/comp_see.png" />
+						<p><small>Possible Solutions</small></p>
+						<ol>
+							<li class="fragment highlight-red">Hardcode - If-Else</li>
+							<li class="fragment highlight-blue">Machine Learning or Deep Learning</li>
+						</ol>
+					</section>
 				</section>
 
 				<!-- Literature Survey  -->
 				<section>
-					<h2>Literature Survey</h2>
-					<h4>On the Previous Works in Tamil Character Classifiaction</h4>
-					<table>
-						<thead>
-							<tr>
-								<th>Ref.No</th>
-								<th>Reference Paper</th>
-								<th>Authors</th>
-								<th>Findings</th>
-								<th>Cons</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-						</tbody>
-					</table>
+					<section>
+						<h2>Literature Survey</h2>
+						<h4>On the Previous Works in Tamil Character Classifiaction</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Ref.No</th>
+									<th>Reference Paper</th>
+									<th>Authors</th>
+									<th>Findings</th>
+									<th>Cons</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[1]</td>
+									<td><small>A Two Stage Recognition Scheme for Handwritten Tamil Characters</small></td>
+									<td><small>U. Bhattacharya, S. K. Ghosh and S. K. Parui</small></td>
+									<td><small>
+										<ul>
+											<li>Two stage process</li>
+											<li>Dataset used : HPL Tamil</li>
+											<li>First Stage : Classes are grouped into clusters - K means clustering</li>
+											<li>Same class can be in different clusters</li>
+											<li>Classification - MLP</li>
+										</ul>
+									</small></td>
+									<td><small>
+										<ul>
+											<li>Two feature extraction
+												First stage - 7 x 7 boxes
+												Second stage - chain code histogram
+											</li>
+											<li>Two stages</li>
+											<li>Only Clusters Prediction</li>
+										</ul>
+									</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Literature Survey</h2>
+						<h4>On the Previous Works in Tamil Character Classifiaction</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Ref.No</th>
+									<th>Reference Paper</th>
+									<th>Authors</th>
+									<th>Findings</th>
+									<th>Cons</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[2]</td>
+									<td><small>Translation and Scale Invariant Recognition of Handwritten Tamil Characters Using a Hierarchical Neural Network</small></td>
+									<td><small>T.Paulpandian and V.Ganapathy</small></td>
+									<td><small>
+										<ul>
+											<li>Shows a system that can recognise characters without considering the translation and scale factors</li>
+											<li>Origin is set to the center of a character</li>
+											<li>Several network architectures are discussed</li>
+										</ul>
+									</small></td>
+									<td><small>
+										<ul>
+											<li>Uses Online data</li>
+											<li>Feature extraction - calculation of new xy coordinates</li>
+										</ul>
+									</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Literature Survey</h2>
+						<h4>On the Previous Works in Tamil Character Classifiaction</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Ref.No</th>
+									<th>Reference Paper</th>
+									<th>Authors</th>
+									<th>Findings</th>
+									<th>Cons</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[3]</td>
+									<td><small>Handwritten Character Recognition of South Indian Scripts: A Review</small></td>
+									<td><small>Jomy John, Pramod K. V, Kannan Balakrishnan</small></td>
+									<td><small>
+										<ul>
+											<li>Shows all the work done in the recognition of South Indian Scripts</li>
+											<li>Some common pre processing techniques</li>
+											<li>Results obtained</li>
+										</ul>
+									</small></td>
+									<td><small>
+										<ul>
+											<li>Most were online data </li>
+										</ul>
+									</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Literature Survey</h2>
+						<h4>On the Previous Works in Tamil Character Classifiaction</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Ref.No</th>
+									<th>Reference Paper</th>
+									<th>Authors</th>
+									<th>Findings</th>
+									<th>Cons</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[4]</td>
+									<td><small>A Novel SVM-based handwritten Tamil character recognition system</small></td>
+									<td><small>Shanthi N, Duraiswami K</small></td>
+									<td><small>
+										<ul>
+											<li>Uses an SVM to classify images</li>
+											<li>feature extraction - image divided into 64 zones </li>
+											<li>pixel densities are calculated for each zone</li>
+										</ul>
+									</small></td>
+									<td><small>
+										<ul>
+											<li>manual feature extraction </li>
+											<li>two step extraction</li>
+										</ul>
+									</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Literature Survey</h2>
+						<h4>On the Previous Works in Tamil Character Classifiaction</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Ref.No</th>
+									<th>Reference Paper</th>
+									<th>Authors</th>
+									<th>Findings</th>
+									<th>Cons</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[5]</td>
+									<td><small>Offline Tamil Handwritten Character Recognition Using Sub Line Direction and Bounding Box Techniques</small></td>
+									<td><small>S. M. Shyni, M. Antony Robert Raj, S. Abirami</small></td>
+									<td><small>
+										<ul>
+											<li>feature selection through Zoning and Chain code</li>
+											<li>feature extraction through sub line direction and bounding box algorithm</li>
+											<li>SVM</li>
+										</ul>
+									</small></td>
+									<td><small>
+										<ul>
+											<li>manual feature extraction</li>
+											<li>two step extraction</li>
+										</ul>
+									</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Literature Survey</h2>
+						<h4>On the Previous Works in Tamil Character Classifiaction</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Ref.No</th>
+									<th>Reference Paper</th>
+									<th>Authors</th>
+									<th>Findings</th>
+									<th>Cons</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[6]</td>
+									<td><small>A survey on Tamil handwritten character recognition using ocr techniques</small></td>
+									<td><small>Antony Robert Raj M,  Abirami S</small></td>
+									<td><small>
+										<ul>
+											<li>Review Paper</li>
+											<li>Presents a survey of the work carried out in tamil character recognition </li>
+										</ul>
+									</small></td>
+									<td><small>
+										<ul>
+											<li>All had separate feature extraction stage</li>
+										</ul>
+									</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Literature Survey</h2>
+						<h4>On CNN Architecture</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Ref.No</th>
+									<th>Reference Paper</th>
+									<th>Authors</th>
+									<th>Findings</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[7]</td>
+									<td><small>Imagenet classification with deep convolutional neural networks</small></td>
+									<td><small>A. Krizhevsky, I. Sutskever, and G. E. Hinton</small></td>
+									<td><small>
+										<ul>
+											<li>AlexNet</li>
+											<li>Filters:</li>
+											<ul>
+												<li>11 x 11 with stride 4</li>
+												<li>5 x 5</li>
+												<li>3 x 3 </li>
+											</ul>
+										</ul>
+									</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Literature Survey</h2>
+						<h4>On CNN Architecture</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Ref.No</th>
+									<th>Reference Paper</th>
+									<th>Authors</th>
+									<th>Findings</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>[8]</td>
+									<td><small>Very deep convolutional networks for large-scale image recognition</small></td>
+									<td><small>K. Simonyan and A. Zisserman</small></td>
+									<td><small>
+										<ul>
+											<li>VGGNet or the OxfordNet</li>
+											<li>Filters:</li>
+											<ul>
+												<li>64, 128, ...</li>
+												<li>3 x 3 <strong>Fixed</strong></li>
+												<li>stride: 1</li>
+												<li>padding: 1</li>
+											</ul>
+											<li>Max-Pooling:</li>
+											<ul>
+												<li>64, 128, ...</li>
+												<li>2x2</li>
+												<li>stride: 2</li>
+											</ul>
+										</ul>
+									</small></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Dropouts and other Hyper parameters</h2>
+						<p>Online Courses</p>
+						<ul>
+							<li><a href="https://cs231n.stanford.edu">Stanford's CS231n</a></li>
+							<li><a href="https://www.coursera.org/learn/machine-learning">Andrew NG's Machine Learning Course</a></li>
+						</ul>
+					</section>
 				</section>
 
 				<!-- Requirements -->
@@ -163,19 +471,21 @@
 					<section>
 						<h4>Hardware</h4>
 						<ul>
-							<li>No order here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-							<li>Or here</li>
+							<li>16 GB RAM</li>
+							<li>Intel i7 3rd gen processor</li>
 						</ul>
 					</section>
 					<section>
 						<h4>Software</h4>
 						<ul>
-							<li>No order here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-							<li>Or here</li>
+							<li>Python</li>
+							<li>numpy</li>
+							<li>scikit-learn</li>
+							<li>PIL</li>
+							<li>ipython</li>
+							<li>matplotlib</li>
+							<li>theano</li>
+							<li>lasagne</li>
 						</ul>
 					</section>
 				</section>
@@ -184,122 +494,307 @@
 				<section>
 					<section>
 						<h2>Existing System</h2>
-						<ul>
-							<li>No order here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-						</ul>
+						<img style="border:1px solid black" width="700px" height="400px" data-src="assets/images/exis.png">
+						<p class="fragment highlight-red">Manual Feature Extraction Required</p>
 					</section>
 					<section>
 						<h2>Proposed System</h2>
-						<ul>
-							<li>No order here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-						</ul>
+						<img style="border:1px solid black" width="700px" height="400px" data-src="assets/images/prp.png">
+						<p class="fragment highlight-blue">Manual Feature Extraction <strong>NOT</strong> Required</p>
 					</section>
 				</section>
 
 				<!-- System Architecture -->
 				<section>
-					<h2>System Architecture</h2>
+					<section>
+						<h2>System Architecture</h2>
+						<img style="border:1px solid black" data-src="assets/images/sys_part1.png">
+					</section>
+					<section>
+						<h2>System Architecture</h2>
+						<img style="border:1px solid black" height="540px" data-src="assets/images/sys_part2.png">
+					</section>
 				</section>
 
 				<!-- Ftrs -->
 				<section>
-					<h2>Project Features</h2>
-					<ul>
-						<li>A<a target="blank" href="http://google.com">G</a></li>
-						<li>B</li>
-					</ul>
+					<section>
+						<h2>Project Features</h2>
+						<ul>
+							<li>Offline based - direct images</li>
+							<li>Can support any image formats</li>
+							<li>No hand engineered features required</li>
+							<li>Single stage process</li>
+							<li>Output classes are not clustered</li>
+							<li>Limited training examples</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Project Features</h2>
+						<ul>
+							<li>45 class classifier</li>
+							<li>Prints tamil characters - unicode</li>
+							<li>No hand engineered features required</li>
+							<li>Works with images that are compressed</li>
+							<li>No noise removal stage</li>
+							<li>Open Source</li>
+						</ul>
+					</section>
 				</section>
 
 				<!-- Algo -->
 				<section>
-					<h2>Algorithms</h2>
 					<section>
+						<h2>Algorithms</h2>
 						<h4>Softmax Classifier</h4>
 						<ul>
-							<li>No order here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-							<li>Or here</li>
+							<small>
+								<li class="fragment grow">Score Function : <i>y = ${softmax}(x)_i$</i></li>
+								Here softmax is : ${softmax}(x)_i = \frac{\exp(x_i)}{\sum_j \exp(x_j)}$
+								And x is the result of the linear function <i>W(input) + b</i>
+								<br />
+								<li class="fragment grow">Initialise the weights and biases</li>
+								<br />
+								<li class="fragment grow">Loss Function : </li> $-\log\left(\frac{e^{f_{y_i}}}{ \sum_j e^{f_j} }\right) \hspace{0.5in} \text{or equivalently} \hspace{0.5in} L_i = -f_{y_i} + \log\sum_j e^{f_j}$
+								<br />
+								<li class="fragment grow">Set the hyper parameters</li>
+								<br />
+								<li class="fragment grow">Run an optimisation algorithm (SGD)</li>
+							</small>
 						</ul>
 					</section>
 					<section>
+						<h2>Algorithms</h2>
 						<h4>2 Layer Neural Network</h4>
+						<img style="border:1px solid black" width="700px" height="350px" data-src="assets/images/two_layer.png">
 						<ul>
-							<li>No order here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-							<li>Or here</li>
+							<li>ReLU: <i>max(0, x)</i></li>
+							<li>Gradient Descent</li>
 						</ul>
 					</section>
 					<section>
+						<h2>Algorithms</h2>
 						<h4>3 Layer Neural Network</h4>
+						<img style="border:1px solid black" width="700px" height="350px" data-src="assets/images/three_layer.png">
 						<ul>
-							<li>No order here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-							<li>Or here</li>
+							<li>ReLU: <i>max(0, x)</i></li>
+							<li>Gradient Descent with Nesterov Momentum</li>
 						</ul>
 					</section>
 					<section>
+						<h2>Algorithms</h2>
+						<h4>Convolutional Neural Network</h4>
+						<img style="border:1px solid black" width="900px" height="350px" data-src="assets/images/ConvNet.png">
+						<ul>
+							<li>Weights - Xavier Initialization technique</li>
+							<li>Gradient Descent with Nesterov Momentum</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Algorithms</h2>
 						<h4>Convolutional Neural Network</h4>
 						<ul>
-							<li>No order here</li>
-							<li>Or here</li>
-							<li>Or here</li>
-							<li>Or here</li>
+							<li>Non Linearity : ReLU</li>
+							<li>Filters :
+								<ul>
+									<li>Size : 3 x 3</li>
+									<li>Number of Filters : Conv_1: 32, Conv_2: 64</li>
+									<li>Zero Padding: 1 pixel</li>
+								</ul>
+							</li>
+							<li>Max-Pooling :
+								<ul>
+									<li>Size : 2 x 2</li>
+									<li>Stride : 2</li>
+								</ul>
+							</li>
+							<li>Dropout is added for regularization</li>
+							<li>Number of hidden units : FC_1 layer - 250 , FC_2 - 45</li>
 						</ul>
 					</section>
 				</section>
 
 				<!-- Implementation -->
 				<section>
-					<h2>Implementation</h2>
+					<section>
+						<h2>Implementation</h2>
+						<p>System = API + ipython notebook client</p>
+						<pre><code class="python" data-trim data-noescape>
+	# Now Start training by a creating a ConvNet Instance
+	from ConvNet import ConvNet
+
+	net = ConvNet()
+	model = <mark>net.fit</mark>(X_tr, y_tr, X_val, y_val, X_ts, y_ts)
+						</code></pre>
+					<p><a target="blank" href="assets/html/ConvNet.html">ConvNet ipython notebook</a></p>
+					</section>
+					<section>
+						<h2>Implementation</h2>
+						<div class="same_line">
+							<div class="child_left">
+								<img style="border:1px solid black" width="400px" height="400px" data-src="assets/images/paint_a.png">
+							</div>
+							<div class="child_right">
+								<img style="border:1px solid black" width="400px" height="400px" data-src="assets/images/paint_u.png">
+							</div>
+						</div>
+					</section>
 				</section>
 
 				<!-- Demo-->
 				<section>
-					<h2>Demo Gifs</h2>
+					<section>
+						<h2>Demo</h2>
+					</section>
+					<section>
+						<h2>Demo</h2>
+					</section>
+				</section>
+
+				<!-- Results -->
+				<section>
+					<h2>Results Obtained</h2>
 				</section>
 
 				<!-- Benchmark dataset -->
 				<section>
 					<h2>Benchmark Dataset</h2>
+					<p>
+						The HPL isolated handwritten Tamil character dataset - contains approximately 500 isolated samples each of 156
+						Tamil “characters”
+					</p>
+					<img style="border:none;margin-top:-3px" width="400px" height="400px" data-src="assets/images/dataset.png">
 				</section>
 
 				<!-- Performance Metrics -->
 				<section>
-					<h2>Performance Metrics</h2>
+					<section>
+						<h2>Performance Metrics</h2>
+						<p>
+							Training and Test set accuracy - <br />
+							<i>mean(prediction == actual) * 100 </i>
+						</p>
+					</section>
+					<section>
+						<h2>Performance Metrics</h2>
+						<h4>Loss Graphs and Filter Visualisations</h4>
+						<div class="same_line">
+							<div class="child_left">
+								<img style="border:1px solid black" width="300px" height="300px" data-src="assets/images/loss_1.png">
+							</div>
+							<div class="child_right">
+								<img style="border:1px solid black" width="300px" height="300px" data-src="assets/images/loss_2.png">
+							</div>
+						</div>
+						<img style="border:1px solid black" width="300px" height="300px" data-src="assets/images/filters.png">
+					</section>
 				</section>
 
 				<!-- Test Cases -->
 				<section>
 					<h2>Test Cases</h2>
+					<ul>
+						<li>Will be the test set portion of the entire dataset</li>
+						<li>90 samples per class</li>
+						<li>4275 samples</li>
+					</ul>
 				</section>
 
 				<!-- Findings -->
 				<section>
-					<h2>Findings</h2>
+					<section>
+						<h2>Findings</h2>
+						<ul>
+							<li>Linear Classifers</li>
+								<ul>
+									<li>Took the least training time</li>
+									<li>Produces average results</li>
+									<li>Not a good idea to try on images</li>
+								</ul>
+							<li>Validation helps save processing time</li>
+							<li>Adding layers to an existing neural network architecture will not drastically improve the accuracy</li>
+							<li>Plot graphs</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Findings</h2>
+						<ul>
+							<li>Tuning Hyperparameters takes time</li>
+							<li>The number of hidden units (hyperparameter)
+								does not affect accuracy much
+								( Eg - 1000 units and 2000 units )</li>
+							<li>Tuning hyperparameters can improve accuracy tremendously (2% - 52%)</li>
+							<li>Mini Batch training is better</li>
+						</ul>
+					</section>
 				</section>
 
 				<!-- Future Work -->
 				<section>
 					<h2>Future Work</h2>
+					<ul>
+						<li>Model Ensembles</li>
+						<li>Extend to all Tamil Characters</li>
+						<li>Try out different CNN models</li>
+						<li>Build a proper Tamil Character Recognition pipeline</li>
+					</ul>
 				</section>
 
 				<!-- References -->
 				<section>
-					<h2>References</h2>
+					<section>
+						<h2>References</h2>
+						<small>
+							<ul>
+								<li>[1]. Bhattacharya U, Ghosh SK, Parui SK (2007) A two stage recognition scheme for handwritten Tamil characters.
+									In: Proceedings of the ninth international conference on document analysis and recognition (ICDAR 2007). IEEE Computer Society, Washington, DC, pp 511–515
+								</li>
+								<li>
+									[2]. T.Paulpandian and V.Ganapathy Translation and Scale Invariant Recognition of Handwritten Tamil Characters Using a Hierarchical Neural Network”, 1993 IEEE
+								</li>
+								<li>
+									[3]. Jomy John, Pramod K. V, Kannan Balakrishnan Handwritten Character Recognition of South Indian Scripts: A Review , National Conference on Indian Language Computing, Kochi, Feb 19-20, 2011
+								</li>
+								<li>
+									[4]. Shanthi N, Duraiswami K  A Novel SVM-based handwritten Tamil character recognition system. Springer; Pattern Analysis and Application. 2010; 13(2):173–80.
+								</li>
+								<li>
+									[5]. S. M. Shyni, M. Antony Robert Ra, S. Abiram, Offline Tamil Handwritten Character Recognition Using Sub Line Direction and Bounding Box Techniques
+										Apr 2015, Indian Journal of Science and Technology
+								</li>
+							</ul>
+						</small>
+					</section>
+					<section>
+						<h2>References</h2>
+						<small>
+							<ul>
+								<li>
+									[6]. Antony Robert Raj M,  Abirami S. A survey on Tamil handwritten character recognition using ocr techniques. The Second International Conference on Computer Science, Engineering and Applications (CCSEA). 2012; 5:115-27.
+								</li>
+								<li>
+									[7]. Alex Krizhevsky, Ilya Sutskever, and Geoffrey E. Hinton. Imagenet classification with deep convolutional neural networks. In F. Pereira, C. J. C. Burges, L. Bottou, and K. Q. Weinberger, editors, Advances in Neural Information Processing Systems 25, pages 1097– 1105. Curran Associates, Inc., 2012.
+								</li>
+								<li>
+									[8]. K. Simonyan and A. Zisserman. Very deep convolutional networks for large-scale image recognition. arXiv preprint arXiv:1409.1556, 2014.
+								</li>
+								<li>
+									<a href="http://cs231n.stanford.edu">CS231n</a>
+								</li>
+								<li>
+									<a href="https://www.coursera.org/learn/machine-learning">Coursera Course</a>
+								</li>
+								<li>
+									<a href="http://lipitk.sourceforge.net/datasets/tamilchardata.htm">HPL Tamil Dataset</a>
+								</li>
+							</ul>
+						</small>
+					</section>
 				</section>
 
 				<!-- QA -->
 				<section>
-					<h2>Q & A ?</h2>
+					<h2>Q & A </h2>
 				</section>
 
 				<!-- Thank You -->
@@ -307,245 +802,8 @@
 					<h1>Thank You</h1>
 				</section>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
-
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
-
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
-
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
-
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
-
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+				<!-- TODO : Add fragments
+				-->
 
 			</div>
 
@@ -565,6 +823,10 @@ Reveal.addEventListener( 'customevent', function() {
 				center: true,
 				slideNumber: true,
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
+				math: {
+				  mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+				  config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+				},
 
 				// Optional reveal.js plugins
 				dependencies: [
@@ -573,7 +835,9 @@ Reveal.addEventListener( 'customevent', function() {
 					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
 					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+
 				]
 			});
 
