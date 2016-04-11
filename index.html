@@ -57,7 +57,7 @@
 						</div>
 					</div>
 					<p>LOYOLA-ICAM COLLEGE OF ENGINEERING AND TECHNOLOGY (LICET)</p>
-					<p>Loyola  Campus, Nungambakkam, Chennai – 600034</p>
+					<small>Loyola  Campus, Nungambakkam, Chennai – 600034</small>
 					<br />
 					<h2>Applying Machine Learning to Classify Tamil Handwritten Characters</h2>
 					<div class="same_line">
@@ -195,7 +195,7 @@
 											<li>Dataset used : HPL Tamil</li>
 											<li>First Stage : Classes are grouped into clusters - K means clustering</li>
 											<li>Same class can be in different clusters</li>
-											<li>Classification - MLP</li>
+											<li>MLP</li>
 										</ul>
 									</small></td>
 									<td><small>
@@ -646,14 +646,238 @@
 					<section>
 						<h2>Demo</h2>
 					</section>
-					<section>
-						<h2>Demo</h2>
+					<section data-background-video="assets/videos/test.movie" data-background-video-loop>
+					</section>
+					<section data-background-video="assets/videos/paint.movie" data-background-video-loop>
 					</section>
 				</section>
 
 				<!-- Results -->
 				<section>
-					<h2>Results Obtained</h2>
+					<section>
+						<h2>Results Obtained</h2>
+						<h4>Linear Classifier</h4>
+						<table>
+							<thead>
+								<tr>
+									<th>Number of Iterations</th>
+									<th>Learning Rate</th>
+									<th>Regularization (L2)</th>
+									<th>Validation Accuracy</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1500</td>
+									<td>1 x 10-7</td>
+									<td>5 x 10-9</td>
+									<td>0.02</td>
+								</tr>
+								<tr>
+									<td>1500</td>
+									<td>0.001</td>
+									<td>0.5</td>
+									<td>0.198</td>
+								</tr>
+								<tr>
+									<td>1500</td>
+									<td>0.001</td>
+									<td>0.1</td>
+									<td>0.359</td>
+								</tr>
+								<tr>
+									<td>10,000</td>
+									<td>0.001</td>
+									<td>0.1</td>
+									<td><strong>0.6036</strong></td>
+								</tr>
+								<tr>
+									<td>15,000</td>
+									<td>0.001</td>
+									<td>0.1</td>
+									<td>0.578</td>
+								</tr>
+								<tr>
+									<td>10,000</td>
+									<td>0.01</td>
+									<td>0.1</td>
+									<td>0.472</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2>Results Obtained</h2>
+						<h4>Two Layer Neural Network</h4>
+						<small>
+							<table>
+								<thead>
+									<tr>
+										<th>Number of Iterations</th>
+										<th>Number of Hidden Units</th>
+										<th>Learning Rate</th>
+										<th>Regularization (L2)</th>
+										<th>Batch Size</th>
+										<th>Validation Accuracy</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1500</td>
+										<td>1000</td>
+										<td>0.1</td>
+										<td>0.1</td>
+										<td>200</td>
+										<td>0.25</td>
+									</tr>
+									<tr>
+										<td>10,000</td>
+										<td>1000</td>
+										<td>0.1</td>
+										<td>0.01</td>
+										<td>200</td>
+										<td>0.67</td>
+									</tr>
+									<tr>
+										<td>10,000</td>
+										<td>1000</td>
+										<td>0.1</td>
+										<td>0.001</td>
+										<td>200</td>
+										<td>0.69</td>
+									</tr>
+									<tr>
+										<td>20,000</td>
+										<td>1000</td>
+										<td>0.1</td>
+										<td>0.001</td>
+										<td>200</td>
+										<td>0.693</td>
+									</tr>
+									<tr>
+										<td>10,000</td>
+										<td>2000</td>
+										<td>0.1</td>
+										<td>0.001</td>
+										<td>200</td>
+										<td><strong>0.704</strong></td>
+									</tr>
+									<tr>
+										<td>10,000</td>
+										<td>2000</td>
+										<td>0.1</td>
+										<td>0.0001</td>
+										<td>200</td>
+										<td>0.695</td>
+									</tr>
+								</tbody>
+							</table>
+						</small>
+					</section>
+					<section>
+						<h2>Results Obtained</h2>
+						<h4>Three Layer Neural Network</h4>
+						<small>
+							<table>
+								<thead>
+									<tr>
+										<th>Number of Epochs</th>
+										<th>Learning Rate</th>
+										<th>Momentum</th>
+										<th>Batch Size</th>
+										<th>Dropout</th>
+										<th>Validation Accuracy</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>165</td>
+										<td>0.1</td>
+										<td>0.7</td>
+										<td>300</td>
+										<td>Input + first hidden layer</td>
+										<td>0.02</td>
+									</tr>
+									<tr>
+										<td>165</td>
+										<td>0.01</td>
+										<td>0.3</td>
+										<td>300</td>
+										<td>Input + first hidden layer</td>
+										<td>0.727</td>
+									</tr>
+									<tr>
+										<td>400</td>
+										<td>0.01</td>
+										<td>0.7</td>
+										<td>300</td>
+										<td>Input + first hidden layer</td>
+										<td>0.77</td>
+									</tr>
+									<tr>
+										<td>165</td>
+										<td>0.01</td>
+										<td>0.7</td>
+										<td>300</td>
+										<td>Input + first hidden layer</td>
+										<td>0.02</td>
+									</tr>
+									<tr>
+										<td>500</td>
+										<td>0.01</td>
+										<td>0.8</td>
+										<td>300</td>
+										<td>Input + first hidden layer</td>
+										<td><strong>0.844</strong></td>
+									</tr>
+									<tr>
+										<td>500</td>
+										<td>0.01</td>
+										<td>0.8</td>
+										<td>300</td>
+										<td>All</td>
+										<td>0.772</td>
+									</tr>
+								</tbody>
+							</table>
+						</small>
+					</section>
+					<section>
+						<h2>Results Obtained</h2>
+						<h4>Convolutional Neural Network</h4>
+						<small>
+							<table>
+								<thead>
+									<tr>
+										<th>Number of Epochs</th>
+										<th>Learning Rate</th>
+										<th>Momentum</th>
+										<th>Batch Size</th>
+										<th>Dropout</th>
+										<th>Validation Accuracy</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>500</td>
+										<td>0.001</td>
+										<td>0.8</td>
+										<td>300</td>
+										<td>FC_1 at 50%</td>
+										<td>0.9253</td>
+									</tr>
+									<tr>
+										<td>500</td>
+										<td>0.01</td>
+										<td>0.5</td>
+										<td>300</td>
+										<td>Max_pool_2 at 50%, FC_1 at 50%</td>
+										<td><strong>0.9503</strong></td>
+									</tr>
+								</tbody>
+							</table>
+						</small>
+					</section>
 				</section>
 
 				<!-- Benchmark dataset -->
